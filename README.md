@@ -50,8 +50,38 @@ Nutzen
 #Proof of Concept zeigt, wie Support-Teams entlastet werden könnten.
 #Tickets können automatisch vorsortiert, priorisiert und schneller an die richtige Stelle weitergeleitet werden.
 
-Grenzen
-#Die Kategorisierung funktioniert stabiler als die Priorisierung.
-#Prioritäten sind teilweise subjektiv und schwer eindeutig zu bestimmen.
+
+Zu Aufgabenpunkt 3:
+
+Ich habe mein System schrittweise mit 5,10,15,20,25 realen Support-Tickets aus einem Kaggle-Datensatz getestet.
+-> Code beinhaltet 25
+
+Die Tickets enthielten unterschiedliche Themen:
+- Account-Probleme
+- Rechnungsfragen
+- technische Störungen
+- allgemeine Anfragen
+- Netzwerkprobleme
+
+
+Das Modell konnte die meisten Tickets sinnvoll kategorisieren.
+Besonders klare Titel wie "Invoice Details" oder "VPN Access Issue" wurden gut erkannt bzw. könnten an entsprechene Fachkräfte gesandt werden.
+Die Kategorisierung funktionierte insgesamt besser als die Priorisierung. Prioritäten sind schwieriger vorherzusagen, weil Dringlichkeit oft subjektiv ist.
+Ein technisches Problem kann kritisch oder harmlos sein – das erkennt das Modell nicht immer sicher.
+
+Außerdem waren die automatisch erzeugten Zusammenfassungen teilweise ungenau oder abgeschnitten.
+Ein weiteres Limit ist die Sprache: Englische Tickets funktionierten stabiler als deutschsprachige Daten.
+
+
+Der Proof of Concept zeigt, dass eingehende Tickets automatisch vorsortiert werden können.
+Dadurch könnten Support-Teams Zeit sparen:
+
+- Tickets schneller an die richtige Abteilung senden
+- dringende Fälle (ggf.!) früher erkennen
+- große Ticketmengen effizienter bearbeiten
+- Mitarbeiter entlasten
+
+Das System ersetzt (noch) keinen Menschen vollständig, unterstützt aber die Erstbearbeitung sinnvoll.
+
 #Die Zusammenfassungen sind prototypisch und könnten mit einem spezialisierten Summarization-Modell #verbessert werden.
 #Für einen produktiven Einsatz wären weitere Tests mit Unternehmensdaten notwendig (Zeit, #Ressourcen).
